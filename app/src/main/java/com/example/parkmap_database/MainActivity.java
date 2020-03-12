@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
             TextView latitude  = (TextView) tableRow.findViewById(R.id.Latitude);
             TextView longitude  = (TextView) tableRow.findViewById(R.id.Longitude);
             TextView price  = (TextView) tableRow.findViewById(R.id.Price);
+            TextView note  = (TextView) tableRow.findViewById(R.id.Note);
 
 
             name.setText(data.getString(1));
             latitude.setText(data.getString(2));
             longitude.setText(data.getString(3));
             price.setText(data.getString(4));
+            note.setText(data.getString(5));
             tableLayout.addView(tableRow);
 
         } while (data.moveToNext());

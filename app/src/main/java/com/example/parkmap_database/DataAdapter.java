@@ -48,7 +48,7 @@ public class DataAdapter {
 
     public Cursor getTestData() {
         try {
-            String sql ="SELECT * FROM Parking_Lot";
+            String sql ="SELECT * FROM parkingLot";
             Cursor mCur = mDb.rawQuery(sql, null);
             if (mCur != null) {
                 mCur.moveToNext();

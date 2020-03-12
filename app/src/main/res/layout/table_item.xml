@@ -27,8 +27,15 @@
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/Price"
+        android:layout_weight="0.25"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/Note"
         android:layout_weight="0.25"
         android:gravity="center"/>
 </TableRow>
